@@ -11,7 +11,6 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.Region?>
 
-
 <FlowPane xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="se233.chapter3.controller.MainViewController">
    <children>
       <MenuBar prefHeight="20.0" prefWidth="400.0">
@@ -36,7 +35,7 @@
       <AnchorPane prefHeight="240.0" prefWidth="200.0">
          <children>
             <Label layoutX="20.0" layoutY="20.0" text="Drop PDF file below: " />
-            <Region layoutX="20.0" layoutY="45.0" prefHeight="120.0" prefWidth="150.0" style="-fx-border-color: black;" />
+            <Region fx:id="dropRegion" layoutX="20.0" layoutY="45.0" prefHeight="120.0" prefWidth="150.0" style="-fx-border-color: black;" />
             <ProgressBar fx:id="progressBar" layoutX="20.0" layoutY="190.0" prefWidth="150.0" progress="0.0" />
          </children>
       </AnchorPane>
