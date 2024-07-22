@@ -1,12 +1,17 @@
 package se233.chapter3.controller;
 
+import javafx.concurrent.Task;
 import javafx.fxml.FXML;
+import javafx.geometry.Pos;
+import javafx.scene.Parent;
 import javafx.scene.control.Button;
 import javafx.scene.control.ListView;
 import javafx.scene.control.ProgressBar;
+import javafx.scene.control.ProgressIndicator;
 import javafx.scene.input.Dragboard;
 import javafx.scene.input.TransferMode;
 import javafx.scene.layout.Region;
+import javafx.scene.layout.VBox;
 import javafx.stage.Popup;
 import se233.chapter3.Launcher;
 import se233.chapter3.model.FileFreq;
@@ -61,37 +66,56 @@ public class MainViewController {
         });
 
         startButton.setOnAction(event->{
-            ExecutorService executor = Executors.newFixedThreadPool(4);
-            final ExecutorCompletionService<Map<String, FileFreq>> completionService = new ExecutorCompletionService<>(executor);
-            List<String> inputListViewItems = inputListView.getItems();
-            int totalFiles = inputListViewItems.size();
-            Map<String, FileFreq>[] wordMap = new Map[totalFiles];
-            for (int i = 0; i < totalFiles; i++) {
-                try{
-                    String filePath = inputListViewItems.get(i);
-                    PdfDocument p = new PdfDocument(filePath);
-                    completionService.submit(new WordCountMapTask(p));
-                }catch (IOException e){e.printStackTrace();}
-            }
-            for(int i=0; i<totalFiles; i++){
-                try{
-                    Future<Map<String, FileFreq>> future= completionService.take();
-                    wordMap[i] = future.get();
-                }catch(Exception e){
-                    e.printStackTrace();
-                }
-            }
-            try{
-                WordCountReduceTask merger = new WordCountReduceTask(wordMap);
-                Future<LinkedHashMap<String, List<FileFreq>>> future = executor.submit(merger);
-                uniqueSets = future.get();
-                listView.getItems().addAll(uniqueSets.keySet());
-            }catch (Exception e){
-                e.printStackTrace();
-            }finally {
-                executor.shutdown();
-            }
+            Parent bgRoot = Launcher.primaryStage.getScene().getRoot();
+            Task<Void> processTask= new Task<Void>() {
+                @Override
+                protected Void call() throws IOException {
+                    ProgressIndicator pi = new ProgressIndicator();
+                    VBox box = new VBox(pi);
+                    box.setAlignment(Pos.CENTER);
+                    Launcher.primaryStage.getScene().setRoot(box);
 
+                    ExecutorService executor = Executors.newFixedThreadPool(4);
+                    final ExecutorCompletionService<Map<String, FileFreq>> completionService = new ExecutorCompletionService<>(executor);
+                    List<String> inputListViewItems = inputListView.getItems();
+                    int totalFiles = inputListViewItems.size();
+                    Map<String, FileFreq>[] wordMap = new Map[totalFiles];
+                    for (int i = 0; i < totalFiles; i++) {
+                        try{
+                            String filePath = inputListViewItems.get(i);
+                            PdfDocument p = new PdfDocument(filePath);
+                            completionService.submit(new WordCountMapTask(p));
+                        }catch (IOException e){e.printStackTrace();}
+                    }
+                    for(int i=0; i<totalFiles; i++){
+                        try{
+                            Future<Map<String, FileFreq>> future= completionService.take();
+                            wordMap[i] = future.get();
+                        }catch(Exception e){
+                            e.printStackTrace();
+                        }
+                    }
+                    try{
+                        WordCountReduceTask merger = new WordCountReduceTask(wordMap);
+                        Future<LinkedHashMap<String, List<FileFreq>>> future = executor.submit(merger);
+                        uniqueSets = future.get();
+                        listView.getItems().addAll(uniqueSets.keySet());
+                    }catch (Exception e){
+                        e.printStackTrace();
+                    }finally {
+                        executor.shutdown();
+                    }
+                    return null;
+                }
+            };
+
+            processTask.setOnSucceeded(e-> {
+                Launcher.primaryStage.getScene().setRoot(bgRoot);
+            });
+
+            Thread thread = new Thread(processTask);
+            thread.setDaemon(true);
+            thread.start();
         });
 
         listView.setOnMouseClicked(event->{
