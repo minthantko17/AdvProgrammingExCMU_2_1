@@ -7,6 +7,8 @@ import javafx.scene.control.ProgressBar;
 import javafx.scene.input.Dragboard;
 import javafx.scene.input.TransferMode;
 import javafx.scene.layout.Region;
+import javafx.stage.Popup;
+import se233.chapter3.Launcher;
 import se233.chapter3.model.FileFreq;
 import se233.chapter3.model.PdfDocument;
 
@@ -70,6 +72,24 @@ public class MainViewController {
             WordCountReduceTask merger = new WordCountReduceTask(wordMap);
             uniqueSets = merger.getUniqueSets();
             listView.getItems().addAll(uniqueSets.keySet());
+        });
+
+        listView.setOnMouseClicked(event->{
+            List<FileFreq> listOfLinks = uniqueSets.get(listView.getSelectionModel().getSelectedItem());
+            ListView<FileFreq> popupListView = new ListView<>();
+            LinkedHashMap<FileFreq,String> lookupTable = new LinkedHashMap<>();
+            for (int i = 0; i < listOfLinks.size(); i++) {
+                lookupTable.put(listOfLinks.get(i), listOfLinks.get(i).getPath());
+                popupListView.getItems().add(listOfLinks.get(i));
+            }
+            popupListView.setPrefHeight(popupListView.getItems().size() * 28);
+            popupListView.setOnMouseClicked(innerEvent->{
+                Launcher.hs.showDocument("file:///"+lookupTable.get(popupListView.getSelectionModel().getSelectedItem()));
+                popupListView.getScene().getWindow().hide();
+            });
+            Popup popup=new Popup();
+            popup.getContent().add(popupListView);
+            popup.show(Launcher.primaryStage);
         });
     }
 }
