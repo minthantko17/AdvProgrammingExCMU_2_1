@@ -7,19 +7,27 @@ import se233.chapter3.model.PdfDocument;
 import java.io.IOException;
 import java.util.AbstractMap;
 import java.util.Map;
+import java.util.concurrent.Callable;
 import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 
 import static java.util.stream.Collectors.toMap;
 
-public class WordCountMapTask {
-    private Map<String, FileFreq> wordCount;
+public class WordCountMapTask implements Callable<Map<String, FileFreq>> {
+    private PdfDocument doc;
 
-    public WordCountMapTask(PdfDocument doc) throws IOException{
+    public WordCountMapTask(PdfDocument doc) throws IOException {
+        this.doc = doc;
+    }
+
+    @Override
+    public Map<String, FileFreq> call() throws Exception {
+        Map<String, FileFreq> wordCount;
+
         PDFTextStripper reader=new PDFTextStripper();
         Pattern pattern= Pattern.compile(" ");
         String s=reader.getText(doc.getDocument());
-        this.wordCount = pattern.splitAsStream(s)
+        wordCount = pattern.splitAsStream(s)
                 .map(word -> word.replaceAll("[^a-zA-Z]", "").toLowerCase().trim())
                 .filter(word -> word.length() > 3)
                 .map(word -> new AbstractMap.SimpleEntry<>(word, 1))
@@ -27,9 +35,11 @@ public class WordCountMapTask {
                 .entrySet().stream()
                 .filter(e-> e.getValue()>1)
                 .collect(Collectors.toMap(e -> e.getKey(), e-> new FileFreq(doc.getName(),doc.getFilePath(),e.getValue())));
+        return wordCount;
     }
 
-    public Map<String, FileFreq> getWordCount() {return wordCount;}
-    public void setWordCount(Map<String, FileFreq> wordCount) {this.wordCount = wordCount;}
+//    public Map<String, FileFreq> getWordCount() {return wordCount;}
+//    public void setWordCount(Map<String, FileFreq> wordCount) {this.wordCount = wordCount;}
+
 
 }

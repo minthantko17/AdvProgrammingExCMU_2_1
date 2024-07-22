@@ -17,6 +17,10 @@ import java.io.IOException;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.concurrent.ExecutorCompletionService;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 public class MainViewController {
     LinkedHashMap<String, List<FileFreq>> uniqueSets;
@@ -57,21 +61,37 @@ public class MainViewController {
         });
 
         startButton.setOnAction(event->{
+            ExecutorService executor = Executors.newFixedThreadPool(4);
+            final ExecutorCompletionService<Map<String, FileFreq>> completionService = new ExecutorCompletionService<>(executor);
             List<String> inputListViewItems = inputListView.getItems();
             int totalFiles = inputListViewItems.size();
-            WordCountMapTask[] wordCountMapTaskArray = new WordCountMapTask[totalFiles];
             Map<String, FileFreq>[] wordMap = new Map[totalFiles];
             for (int i = 0; i < totalFiles; i++) {
                 try{
                     String filePath = inputListViewItems.get(i);
                     PdfDocument p = new PdfDocument(filePath);
-                    wordCountMapTaskArray[i] = new WordCountMapTask(p);
-                    wordMap[i] = wordCountMapTaskArray[i].getWordCount();
+                    completionService.submit(new WordCountMapTask(p));
                 }catch (IOException e){e.printStackTrace();}
             }
-            WordCountReduceTask merger = new WordCountReduceTask(wordMap);
-            uniqueSets = merger.getUniqueSets();
-            listView.getItems().addAll(uniqueSets.keySet());
+            for(int i=0; i<totalFiles; i++){
+                try{
+                    Future<Map<String, FileFreq>> future= completionService.take();
+                    wordMap[i] = future.get();
+                }catch(Exception e){
+                    e.printStackTrace();
+                }
+            }
+            try{
+                WordCountReduceTask merger = new WordCountReduceTask(wordMap);
+                Future<LinkedHashMap<String, List<FileFreq>>> future = executor.submit(merger);
+                uniqueSets = future.get();
+                listView.getItems().addAll(uniqueSets.keySet());
+            }catch (Exception e){
+                e.printStackTrace();
+            }finally {
+                executor.shutdown();
+            }
+
         });
 
         listView.setOnMouseClicked(event->{
