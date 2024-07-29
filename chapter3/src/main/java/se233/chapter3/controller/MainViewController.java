@@ -126,7 +126,7 @@ public class MainViewController {
                 lookupTable.put(listOfLinks.get(i), listOfLinks.get(i).getPath());
                 popupListView.getItems().add(listOfLinks.get(i));
             }
-            popupListView.setPrefHeight(popupListView.getItems().size() * 28);
+            popupListView.setPrefHeight(popupListView.getItems().size() * 50);
             popupListView.setOnMouseClicked(innerEvent->{
                 Launcher.hs.showDocument("file:///"+lookupTable.get(popupListView.getSelectionModel().getSelectedItem()));
                 popupListView.getScene().getWindow().hide();

@@ -31,8 +31,13 @@ public class WordCountReduceTask implements Callable<LinkedHashMap<String, List<
                 ))
                 .entrySet()
                 .stream()
-                .sorted(Map.Entry.comparingByKey())
+                .sorted((a,b)->{
+                    int num1=a.getValue().stream().mapToInt(num->num.getFreq()).sum();
+                    int num2=b.getValue().stream().mapToInt(num->num.getFreq()).sum();
+                    return Integer.compare(num2, num1);
+                })
                 .collect(Collectors.toMap(e->e.getKey(), e->e.getValue(), (v1,v2)->v1, ()->new LinkedHashMap<>()));
+                    // mapFactory – a supplier providing a new empty Map into which the results will be inserted
         return uniqueSets;
     }
 
