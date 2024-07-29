@@ -6,6 +6,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Parent;
 import javafx.scene.control.*;
 import javafx.scene.input.Dragboard;
+import javafx.scene.input.KeyCode;
 import javafx.scene.input.TransferMode;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
@@ -139,6 +140,7 @@ public class MainViewController {
                 lookupTable.put(listOfLinks.get(i), listOfLinks.get(i).getPath());
                 popupListView.getItems().add(listOfLinks.get(i));
             }
+
             popupListView.setPrefHeight(popupListView.getItems().size() * 50);
             popupListView.setOnMouseClicked(innerEvent->{
                 Launcher.hs.showDocument("file:///"+lookupTable.get(popupListView.getSelectionModel().getSelectedItem()));
@@ -147,6 +149,13 @@ public class MainViewController {
             Popup popup=new Popup();
             popup.getContent().add(popupListView);
             popup.show(Launcher.primaryStage);
+
+            popupListView.setOnKeyPressed(e->{
+                if(e.getCode()== KeyCode.ESCAPE){
+                    popup.hide();
+                }
+            });
+
         });
 
         closeBtn.setOnAction(event->System.exit(1));
