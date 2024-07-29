@@ -19,10 +19,8 @@ import se233.chapter3.model.PdfDocument;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.Collections;
-import java.util.LinkedHashMap;
-import java.util.List;
-import java.util.Map;
+import java.nio.file.Paths;
+import java.util.*;
 import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
@@ -37,6 +35,8 @@ public class MainViewController {
     private Button startButton;
     @FXML
     private ListView listView;
+
+    List<String> inputFilePath=new ArrayList<>();
 
     @FXML
     public void initialize(){
@@ -56,11 +56,14 @@ public class MainViewController {
             if(db.hasFiles()){
                 success=true;
                 String filePath;
+                String fileName;
                 int totalFiles=db.getFiles().size();
                 for(int i=0;i<totalFiles;i++){
                     File file = db.getFiles().get(i);
                     filePath = file.getAbsolutePath();
-                    inputListView.getItems().add(filePath);
+                    fileName = Paths.get(filePath).getFileName().toString();
+                    inputFilePath.add(filePath);
+                    inputListView.getItems().add(fileName);
                 }
             }
             event.setDropCompleted(success);
@@ -79,7 +82,7 @@ public class MainViewController {
 
                     ExecutorService executor = Executors.newFixedThreadPool(4);
                     final ExecutorCompletionService<Map<String, FileFreq>> completionService = new ExecutorCompletionService<>(executor);
-                    List<String> inputListViewItems = inputListView.getItems();
+                    List<String> inputListViewItems = inputFilePath;
                     int totalFiles = inputListViewItems.size();
                     Map<String, FileFreq>[] wordMap = new Map[totalFiles];
                     for (int i = 0; i < totalFiles; i++) {
