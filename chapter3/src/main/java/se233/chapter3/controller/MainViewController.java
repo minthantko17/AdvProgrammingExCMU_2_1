@@ -4,10 +4,7 @@ import javafx.concurrent.Task;
 import javafx.fxml.FXML;
 import javafx.geometry.Pos;
 import javafx.scene.Parent;
-import javafx.scene.control.Button;
-import javafx.scene.control.ListView;
-import javafx.scene.control.ProgressBar;
-import javafx.scene.control.ProgressIndicator;
+import javafx.scene.control.*;
 import javafx.scene.input.Dragboard;
 import javafx.scene.input.TransferMode;
 import javafx.scene.layout.Region;
@@ -35,6 +32,8 @@ public class MainViewController {
     private Button startButton;
     @FXML
     private ListView listView;
+    @FXML
+    private MenuItem closeBtn;
 
     List<String> inputFilePath=new ArrayList<>();
 
@@ -149,5 +148,7 @@ public class MainViewController {
             popup.getContent().add(popupListView);
             popup.show(Launcher.primaryStage);
         });
+
+        closeBtn.setOnAction(event->System.exit(1));
     }
 }
