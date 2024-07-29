@@ -2,6 +2,7 @@ package se233.chapter3.controller;
 
 import se233.chapter3.model.FileFreq;
 
+import java.io.File;
 import java.util.*;
 import java.util.concurrent.Callable;
 import java.util.stream.Collector;
@@ -27,7 +28,12 @@ public class WordCountReduceTask implements Callable<LinkedHashMap<String, List<
                                 (list, item) -> list.add(item.getValue()),
                                 (currentList, newItems) -> {
                                     currentList.addAll(newItems);
-                                    return currentList; })
+                                    return currentList; },
+                                lst->{
+                                    Collections.sort(lst, (s1, s2)->Integer.compare(s2.getFreq(), s1.getFreq()));
+                                    return lst;
+                                })
+
                 ))
                 .entrySet()
                 .stream()

@@ -19,6 +19,7 @@ import se233.chapter3.model.PdfDocument;
 
 import java.io.File;
 import java.io.IOException;
+import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
@@ -26,6 +27,7 @@ import java.util.concurrent.ExecutorCompletionService;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
+import java.util.stream.Collectors;
 
 public class MainViewController {
     LinkedHashMap<String, List<FileFreq>> uniqueSets;
@@ -99,7 +101,14 @@ public class MainViewController {
                         WordCountReduceTask merger = new WordCountReduceTask(wordMap);
                         Future<LinkedHashMap<String, List<FileFreq>>> future = executor.submit(merger);
                         uniqueSets = future.get();
-                        listView.getItems().addAll(uniqueSets.keySet());
+                        listView.getItems().addAll(uniqueSets.entrySet().stream()
+                                .map(m->m.getKey()+"("
+                                        +m.getValue().stream()
+                                        .map(num-> (num.getFreq()))
+                                        .collect(Collectors.toList()).toString().replaceAll("[\\[\\]]","")
+                                        +")")
+                                .collect(Collectors.toList())
+                        );
                     }catch (Exception e){
                         e.printStackTrace();
                     }finally {
@@ -119,7 +128,9 @@ public class MainViewController {
         });
 
         listView.setOnMouseClicked(event->{
-            List<FileFreq> listOfLinks = uniqueSets.get(listView.getSelectionModel().getSelectedItem());
+            List<FileFreq> listOfLinks = uniqueSets.get(
+                    listView.getSelectionModel().getSelectedItem().toString()
+                            .replaceAll("\\s*\\([^)]*\\)", ""));
             ListView<FileFreq> popupListView = new ListView<>();
             LinkedHashMap<FileFreq,String> lookupTable = new LinkedHashMap<>();
             for (int i = 0; i < listOfLinks.size(); i++) {
