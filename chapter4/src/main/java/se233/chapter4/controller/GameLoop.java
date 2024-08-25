@@ -33,6 +33,7 @@ public class GameLoop implements Runnable {
     }
 
     private void checkCollisions(GameCharacter gameCharacter) {
+        gameCharacter.checkReachGameWall();
         gameCharacter.checkReachFloor();
     }
 

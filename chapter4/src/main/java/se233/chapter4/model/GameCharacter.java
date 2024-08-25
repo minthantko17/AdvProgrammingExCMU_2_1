@@ -52,6 +52,14 @@ public class GameCharacter extends Pane {
         x = x + xVelocity;
     }
 
+    public void checkReachGameWall() {
+        if (x <= 0) {
+            x = 0;
+        } else if (x + getWidth() >= GameStage.WIDTH) {
+            x = GameStage.WIDTH - (int) getWidth();
+        }
+    }
+
     public void go() { xVelocity = 5; }
     public void stop() { xVelocity = 0; }
 
