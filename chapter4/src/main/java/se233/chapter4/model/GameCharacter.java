@@ -1,5 +1,7 @@
 package se233.chapter4.model;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
@@ -8,6 +10,7 @@ import se233.chapter4.Launcher;
 import se233.chapter4.view.GameStage;
 
 public class GameCharacter extends Pane {
+    private static final Logger logger = LogManager.getLogger(GameCharacter.class);
     public static final int CHARACTER_WIDTH = 32;
     public static final int CHARACTER_HEIGHT = 64;
     private Image gameCharacterImg;
@@ -126,5 +129,10 @@ public class GameCharacter extends Pane {
     public KeyCode getRightKey() { return rightKey; }
     public KeyCode getUpKey() { return upKey; }
     public AnimatedSprite getImageView() { return imageView; }
+
+    public void trace() {
+        logger.info("x:{} y:{} vx:{} vy:{}",x,y,xVelocity,yVelocity);
+    }
+
 }
 
