@@ -22,7 +22,7 @@ public class GameStage extends Pane {
         ImageView backgroundImg = new ImageView(gameStageImg);
         backgroundImg.setFitHeight(HEIGHT);
         backgroundImg.setFitWidth(WIDTH);
-        gameCharacter = new GameCharacter(30, 30, KeyCode.A, KeyCode.D, KeyCode.W);
+        gameCharacter = new GameCharacter(30, 30,0,0, KeyCode.A,KeyCode.D,KeyCode.W);
         getChildren().addAll(backgroundImg, gameCharacter);
     }
 

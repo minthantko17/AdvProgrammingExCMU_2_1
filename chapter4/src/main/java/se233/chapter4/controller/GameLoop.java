@@ -24,8 +24,10 @@ public class GameLoop implements Runnable {
         if (leftPressed && rightPressed) {
             gameCharacter.stop();
         } else if (leftPressed) {
+            gameCharacter.getImageView().tick();
             gameCharacter.moveLeft();
         } else if (rightPressed) {
+            gameCharacter.getImageView().tick();
             gameCharacter.moveRight();
         } else {
             gameCharacter.stop();
