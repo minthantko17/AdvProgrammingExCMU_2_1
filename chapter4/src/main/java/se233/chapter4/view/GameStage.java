@@ -6,6 +6,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
 import se233.chapter4.Launcher;
 import se233.chapter4.model.GameCharacter;
+import se233.chapter4.model.Keys;
 
 public class GameStage extends Pane {
     public static final int WIDTH = 800;
@@ -13,8 +14,10 @@ public class GameStage extends Pane {
     public final static int GROUND = 300;
     private Image gameStageImg;
     private GameCharacter gameCharacter;
+    private Keys keys;
 
     public GameStage() {
+        keys = new Keys();
         gameStageImg = new Image(Launcher.class.getResourceAsStream("assets/Background.png"));
         ImageView backgroundImg = new ImageView(gameStageImg);
         backgroundImg.setFitHeight(HEIGHT);
@@ -23,7 +26,7 @@ public class GameStage extends Pane {
         getChildren().addAll(backgroundImg, gameCharacter);
     }
 
-    public GameCharacter getGameCharacter() {
-        return gameCharacter;
-    }
+    public GameCharacter getGameCharacter() { return gameCharacter; }
+
+    public Keys getKeys() { return keys; }
 }

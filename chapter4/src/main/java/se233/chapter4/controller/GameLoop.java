@@ -17,6 +17,18 @@ public class GameLoop implements Runnable {
     }
 
     private void update(GameCharacter gameCharacter) {
+        boolean leftPressed = gameStage.getKeys().isPressed(gameCharacter.getLeftKey());
+        boolean rightPressed = gameStage.getKeys().isPressed(gameCharacter.getRightKey());
+
+        if (leftPressed && rightPressed) {
+            gameCharacter.stop();
+        } else if (leftPressed) {
+            gameCharacter.moveLeft();
+        } else if (rightPressed) {
+            gameCharacter.moveRight();
+        } else {
+            gameCharacter.stop();
+        }
         gameCharacter.moveY();
     }
 

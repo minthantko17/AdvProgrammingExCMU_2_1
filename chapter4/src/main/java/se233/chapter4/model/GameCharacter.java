@@ -17,6 +17,7 @@ public class GameCharacter extends Pane {
     private KeyCode leftKey;
     private KeyCode rightKey;
     private KeyCode upKey;
+    int xVelocity = 0;
     int yVelocity = 3;
     boolean isFalling = true;
 
@@ -39,6 +40,21 @@ public class GameCharacter extends Pane {
         }
     }
 
+    public void moveLeft() {
+        setScaleX(-1);
+        go();
+        x = x - xVelocity;
+    }
+
+    public void moveRight() {
+        setScaleX(1);
+        go();
+        x = x + xVelocity;
+    }
+
+    public void go() { xVelocity = 5; }
+    public void stop() { xVelocity = 0; }
+
     public void checkReachFloor() {
         if (isFalling && y >= GameStage.GROUND - CHARACTER_HEIGHT) {
             isFalling = false;
@@ -50,5 +66,8 @@ public class GameCharacter extends Pane {
         setTranslateY(y);
     }
 
+    public KeyCode getLeftKey() { return leftKey; }
+    public KeyCode getRightKey() { return rightKey; }
+    public KeyCode getUpKey() { return upKey; }
 }
 
