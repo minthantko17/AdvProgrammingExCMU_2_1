@@ -11,7 +11,7 @@ public class GameLoop implements Runnable {
 
     public GameLoop(GameStage gameStage) {
         this.gameStage = gameStage;
-        frameRate = 60;
+        frameRate = 10;
         interval = 1000.0f / frameRate;
         running = true;
     }
@@ -19,6 +19,7 @@ public class GameLoop implements Runnable {
     private void update(GameCharacter gameCharacter) {
         boolean leftPressed = gameStage.getKeys().isPressed(gameCharacter.getLeftKey());
         boolean rightPressed = gameStage.getKeys().isPressed(gameCharacter.getRightKey());
+        boolean upPressed = gameStage.getKeys().isPressed(gameCharacter.getUpKey());
 
         if (leftPressed && rightPressed) {
             gameCharacter.stop();
@@ -29,16 +30,11 @@ public class GameLoop implements Runnable {
         } else {
             gameCharacter.stop();
         }
-        gameCharacter.moveY();
-    }
 
-    private void checkCollisions(GameCharacter gameCharacter) {
-        gameCharacter.checkReachGameWall();
-        gameCharacter.checkReachFloor();
-    }
+        if (upPressed) {
+            gameCharacter.jump();
+        }
 
-    private void paint(GameCharacter gameCharacter) {
-        gameCharacter.repaint();
     }
 
     @Override
@@ -46,8 +42,6 @@ public class GameLoop implements Runnable {
         while (running) {
             float time = System.currentTimeMillis();
             update(gameStage.getGameCharacter());
-            checkCollisions(gameStage.getGameCharacter());
-            paint(gameStage.getGameCharacter());
             time = System.currentTimeMillis() - time;
             if (time < interval) {
                 try {

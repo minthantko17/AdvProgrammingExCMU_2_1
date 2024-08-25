@@ -17,9 +17,14 @@ public class GameCharacter extends Pane {
     private KeyCode leftKey;
     private KeyCode rightKey;
     private KeyCode upKey;
-    int xVelocity = 0;
+    int xVelocity = 5;
     int yVelocity = 3;
+    boolean isMoveLeft = false;
+    boolean isMoveRight = false;
     boolean isFalling = true;
+    boolean canJump = false;
+    boolean isJumping = false;
+    int highestJump = 100;
 
     public GameCharacter(int x, int y, KeyCode leftKey, KeyCode rightKey, KeyCode upKey) {
         this.x = x;
@@ -34,22 +39,51 @@ public class GameCharacter extends Pane {
         this.getChildren().addAll(this.imageView);
     }
 
+    public void stop() {
+        isMoveLeft = false;
+        isMoveRight= false;
+    }
+    public void moveX() {
+        setTranslateX(x);
+        if(isMoveLeft) { x = x - xVelocity; }
+        if(isMoveRight) { x = x + xVelocity; }
+    }
+
+    public void jump() {
+        if (canJump) {
+            yVelocity = 5;
+            canJump = false;
+            isJumping = true;
+            isFalling = false;
+        }
+    }
+
+    public void checkReachHighest() {
+        if (isJumping && y <= GameStage.GROUND - CHARACTER_HEIGHT - highestJump) {
+            isJumping = false;
+            isFalling = true;
+        }
+    }
+
     public void moveY() {
+        setTranslateY(y);
         if (isFalling) {
             y = y + yVelocity;
+        }else if(isJumping) {
+            y = y - yVelocity;
         }
     }
 
     public void moveLeft() {
         setScaleX(-1);
-        go();
-        x = x - xVelocity;
+        isMoveLeft=true;
+        isMoveRight=false;
     }
 
     public void moveRight() {
         setScaleX(1);
-        go();
-        x = x + xVelocity;
+        isMoveLeft=false;
+        isMoveRight=true;
     }
 
     public void checkReachGameWall() {
@@ -60,18 +94,16 @@ public class GameCharacter extends Pane {
         }
     }
 
-    public void go() { xVelocity = 5; }
-    public void stop() { xVelocity = 0; }
-
     public void checkReachFloor() {
         if (isFalling && y >= GameStage.GROUND - CHARACTER_HEIGHT) {
             isFalling = false;
+            canJump = true;
         }
     }
 
     public void repaint() {
-        setTranslateX(x);
-        setTranslateY(y);
+        moveX();
+        moveY();
     }
 
     public KeyCode getLeftKey() { return leftKey; }
