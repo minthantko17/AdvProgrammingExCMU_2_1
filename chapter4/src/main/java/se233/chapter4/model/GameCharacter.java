@@ -17,14 +17,17 @@ public class GameCharacter extends Pane {
     private KeyCode leftKey;
     private KeyCode rightKey;
     private KeyCode upKey;
-    int xVelocity = 5;
-    int yVelocity = 3;
+    int xVelocity = 0;
+    int yVelocity = 0;
     boolean isMoveLeft = false;
     boolean isMoveRight = false;
     boolean isFalling = true;
     boolean canJump = false;
     boolean isJumping = false;
-    int highestJump = 100;
+    int xAcceleration = 1;
+    int yAcceleration = 1;
+    int xMaxVelocity = 7;
+    int yMaxVelocity = 17;
 
     public GameCharacter(int x, int y, int offsetX, int offsetY, KeyCode leftKey, KeyCode rightKey, KeyCode upKey) {
         this.x = x;
@@ -45,33 +48,35 @@ public class GameCharacter extends Pane {
         isMoveLeft = false;
         isMoveRight= false;
     }
-    public void moveX() {
-        setTranslateX(x);
-        if(isMoveLeft) { x = x - xVelocity; }
-        if(isMoveRight) { x = x + xVelocity; }
-    }
 
     public void jump() {
         if (canJump) {
-            yVelocity = 5;
+            yVelocity = yMaxVelocity;
             canJump = false;
             isJumping = true;
             isFalling = false;
         }
     }
 
-    public void checkReachHighest() {
-        if (isJumping && y <= GameStage.GROUND - CHARACTER_HEIGHT - highestJump) {
-            isJumping = false;
-            isFalling = true;
+    public void moveX() {
+        setTranslateX(x);
+        if(isMoveLeft) {
+            xVelocity = xVelocity>=xMaxVelocity? xMaxVelocity : xVelocity+xAcceleration;
+            x = x - xVelocity;
+        }
+        if(isMoveRight) {
+            xVelocity = xVelocity>=xMaxVelocity? xMaxVelocity : xVelocity+xAcceleration;
+            x = x + xVelocity;
         }
     }
 
     public void moveY() {
         setTranslateY(y);
         if (isFalling) {
+            yVelocity = yVelocity >= yMaxVelocity? yMaxVelocity : yVelocity+yAcceleration;
             y = y + yVelocity;
         }else if(isJumping) {
+            yVelocity = yVelocity <= 0 ? 0 : yVelocity-yAcceleration;
             y = y - yVelocity;
         }
     }
@@ -88,6 +93,14 @@ public class GameCharacter extends Pane {
         isMoveRight=true;
     }
 
+    public void checkReachHighest() {
+        if(isJumping && yVelocity <= 0) {
+            isJumping = false;
+            isFalling = true;
+            yVelocity = 0;
+        }
+    }
+
     public void checkReachGameWall() {
         if (x <= 0) {
             x = 0;
@@ -100,6 +113,7 @@ public class GameCharacter extends Pane {
         if (isFalling && y >= GameStage.GROUND - CHARACTER_HEIGHT) {
             isFalling = false;
             canJump = true;
+            yVelocity = 0;
         }
     }
 
