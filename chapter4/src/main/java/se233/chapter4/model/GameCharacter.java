@@ -27,23 +27,25 @@ public class GameCharacter extends Pane {
     boolean isFalling = true;
     boolean canJump = false;
     boolean isJumping = false;
-    int xAcceleration = 1;
-    int yAcceleration = 1;
-    int xMaxVelocity = 7;
-    int yMaxVelocity = 17;
+    int xAcceleration;
+    int yAcceleration;
+    int xMaxVelocity;
+    int yMaxVelocity;
 
-    public GameCharacter(int x, int y, int offsetX, int offsetY, KeyCode leftKey, KeyCode rightKey, KeyCode upKey) {
+    public GameCharacter(ImageView imgView, int x, int y, int offsetX, int offsetY, KeyCode leftKey, KeyCode rightKey, KeyCode upKey,
+                         int xAcceleration, int xMaxVelocity,int yAcceleration, int yMaxVelocity) {
         this.x = x;
         this.y = y;
         this.setTranslateX(x);
         this.setTranslateY(y);
-        this.gameCharacterImg = new Image(Launcher.class.getResourceAsStream("assets/MarioSheet.png"));
-        this.imageView = new AnimatedSprite(gameCharacterImg, 4, 4, 1, offsetX, offsetY, 16, 32);
-        this.imageView.setFitWidth(CHARACTER_WIDTH);
-        this.imageView.setFitHeight(CHARACTER_HEIGHT);
+        this.imageView = (AnimatedSprite) imgView;
         this.leftKey = leftKey;
         this.rightKey = rightKey;
         this.upKey = upKey;
+        this.xAcceleration=xAcceleration;
+        this.xMaxVelocity=xMaxVelocity;
+        this.yAcceleration=yAcceleration;
+        this.yMaxVelocity=yMaxVelocity;
         this.getChildren().addAll(this.imageView);
     }
 
@@ -114,6 +116,7 @@ public class GameCharacter extends Pane {
 
     public void checkReachFloor() {
         if (isFalling && y >= GameStage.GROUND - CHARACTER_HEIGHT) {
+            y = GameStage.GROUND - CHARACTER_HEIGHT;
             isFalling = false;
             canJump = true;
             yVelocity = 0;
