@@ -1,5 +1,6 @@
 module se233.chapter4 {
     requires javafx.controls;
+    requires javafx.media;
     requires javafx.fxml;
     requires org.apache.logging.log4j;
 

@@ -4,10 +4,15 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 import se233.chapter4.Launcher;
 import se233.chapter4.model.AnimatedSprite;
 import se233.chapter4.model.GameCharacter;
 import se233.chapter4.model.Keys;
+
+import java.io.File;
+
 
 public class GameStage extends Pane {
     public static final int WIDTH = 800;
@@ -18,6 +23,7 @@ public class GameStage extends Pane {
     private Image char2Img;
     private ImageView char1ImgView;
     private ImageView char2ImgView;
+
 
     private GameCharacter gameCharacter1;
     private GameCharacter gameCharacter2;
@@ -37,7 +43,7 @@ public class GameStage extends Pane {
 
 
         gameCharacter1 = new GameCharacter(char1ImgView,30, 30,0,0, KeyCode.A,KeyCode.D,KeyCode.W,1,7, 1,17);
-        gameCharacter2 = new GameCharacter(char2ImgView,30, 30,0,0, KeyCode.LEFT,KeyCode.RIGHT,KeyCode.UP,3,15,2,25);
+        gameCharacter2 = new GameCharacter(char2ImgView,70, 30,0,0, KeyCode.LEFT,KeyCode.RIGHT,KeyCode.UP,3,15,2,25);
         getChildren().addAll(backgroundImg, gameCharacter1, gameCharacter2);
     }
 

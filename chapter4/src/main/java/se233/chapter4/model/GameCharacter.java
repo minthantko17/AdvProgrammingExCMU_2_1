@@ -11,8 +11,6 @@ import se233.chapter4.view.GameStage;
 
 public class GameCharacter extends Pane {
     private static final Logger logger = LogManager.getLogger(GameCharacter.class);
-    public static final int CHARACTER_WIDTH = 32;
-    public static final int CHARACTER_HEIGHT = 64;
     private Image gameCharacterImg;
     private AnimatedSprite imageView;
     private int x;
@@ -90,12 +88,18 @@ public class GameCharacter extends Pane {
         setScaleX(-1);
         isMoveLeft=true;
         isMoveRight=false;
+        if(x<=0){
+            logger.debug("Reached left wall.");
+        }
     }
 
     public void moveRight() {
         setScaleX(1);
         isMoveLeft=false;
         isMoveRight=true;
+        if( x+getWidth() >=GameStage.WIDTH){
+            logger.debug("Reached right wall.");
+        }
     }
 
     public void checkReachHighest() {
@@ -115,8 +119,8 @@ public class GameCharacter extends Pane {
     }
 
     public void checkReachFloor() {
-        if (isFalling && y >= GameStage.GROUND - CHARACTER_HEIGHT) {
-            y = GameStage.GROUND - CHARACTER_HEIGHT;
+        if (isFalling && y >= GameStage.GROUND - (int)imageView.getFitHeight()) {
+            y = GameStage.GROUND - (int)imageView.getFitHeight();
             isFalling = false;
             canJump = true;
             yVelocity = 0;
