@@ -56,5 +56,31 @@ public class SnakeTest {
         assertTrue(snake.collided(food));
     }
 
+    @Test
+    public void checkDead_ifHitGameBorder_snakeWillDie() {
+        snake = new Snake(new Point2D(30, 30));
+        snake.setDirection(Direction.RIGHT);
+        snake.move();
+        assertTrue(snake.checkDead());
+    }
+
+    @Test
+    public void checkDead_ifHitItself_snakeWillDie() {
+        snake = new Snake(new Point2D(0, 0));
+        snake.setDirection(Direction.DOWN);
+        snake.move();
+        snake.grow();
+        snake.setDirection(Direction.LEFT);
+        snake.move();
+        snake.grow();
+        snake.setDirection(Direction.UP);
+        snake.move();
+        snake.grow();
+        snake.setDirection(Direction.RIGHT);
+        snake.move();
+        snake.grow();
+        assertTrue(snake.checkDead());
+    }
+
 }
 

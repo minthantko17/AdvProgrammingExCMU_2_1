@@ -1,6 +1,7 @@
 package se233.chapter5_part2.model;
 
 import javafx.geometry.Point2D;
+import se233.chapter5_part2.view.GameStage;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +33,13 @@ public class Snake {
         body.add(prev_tail);
     }
 
+    public boolean checkDead() {
+        boolean isOutOfBound = head.getX() < 0 || head.getY() < 0 || head.getX() > GameStage.WIDTH || head.getY() > GameStage.HEIGHT;
+        boolean isHitBody = body.lastIndexOf(head) > 0;
+        return isOutOfBound || isHitBody;
+    }
+
+    //***Getter Setter***
     public int getLength() {
         return body.size();
     }
