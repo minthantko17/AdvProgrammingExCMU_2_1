@@ -36,6 +36,9 @@ public class GameStage extends Pane {
         getChildren().addAll(gameCharacterList);
         getChildren().addAll(scoreList);
     }
+
+    // ****Getter Setter*****
+    //***********************
     public List<GameCharacter> getGameCharacterList() {
 
         return gameCharacterList;
@@ -51,5 +54,21 @@ public class GameStage extends Pane {
 
     public List<Score> getScoreList() {
         return scoreList;
+    }
+
+    public void setGameStageImg(Image gameStageImg) {
+        this.gameStageImg = gameStageImg;
+    }
+
+    public void setGameCharacterList(List<GameCharacter> gameCharacterList) {
+        this.gameCharacterList = gameCharacterList;
+    }
+
+    public void setScoreList(List<Score> scoreList) {
+        this.scoreList = scoreList;
+    }
+
+    public void setKeys(Keys keys) {
+        this.keys = keys;
     }
 }

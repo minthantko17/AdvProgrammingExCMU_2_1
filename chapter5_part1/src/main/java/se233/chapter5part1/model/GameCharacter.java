@@ -162,6 +162,9 @@ public class GameCharacter extends Pane {
         this.isJumping = false;
     }
 
+
+    // *****Getter Setter*****
+    // ***********************
     public KeyCode getLeftKey() {
 
         return leftKey;
@@ -209,5 +212,53 @@ public class GameCharacter extends Pane {
 
     public int getScore() {
         return score;
+    }
+
+    public void setCharacterImg(Image characterImg) {
+        this.characterImg = characterImg;
+    }
+
+    public void setImageView(AnimatedSprite imageView) {
+        this.imageView = imageView;
+    }
+
+    public void setX(int x) {
+        this.x = x;
+    }
+
+    public void setY(int y) {
+        this.y = y;
+    }
+
+    public void setStartX(int startX) {
+        this.startX = startX;
+    }
+
+    public void setStartY(int startY) {
+        this.startY = startY;
+    }
+
+    public void setCharacterWidth(int characterWidth) {
+        this.characterWidth = characterWidth;
+    }
+
+    public void setCharacterHeight(int characterHeight) {
+        this.characterHeight = characterHeight;
+    }
+
+    public void setScore(int score) {
+        this.score = score;
+    }
+
+    public void setLeftKey(KeyCode leftKey) {
+        this.leftKey = leftKey;
+    }
+
+    public void setRightKey(KeyCode rightKey) {
+        this.rightKey = rightKey;
+    }
+
+    public void setUpKey(KeyCode upKey) {
+        this.upKey = upKey;
     }
 }
