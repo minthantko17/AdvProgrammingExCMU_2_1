@@ -24,6 +24,22 @@ public class Snake {
         body.add(0, head);
     }
 
+    public boolean collided(Food food) {
+        return head.equals(food.getPosition());
+    }
+
+    public void grow() {
+        body.add(prev_tail);
+    }
+
+    public int getLength() {
+        return body.size();
+    }
+
+    public List<Point2D> getBody() {
+        return body;
+    }
+
     public void setDirection(Direction direction) {
         this.direction = direction;
     }
