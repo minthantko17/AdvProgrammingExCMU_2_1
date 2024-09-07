@@ -16,6 +16,7 @@ public class GameCharacter extends Pane {
     private int startY;
     private int characterWidth;
     private int characterHeight;
+    private int score=0;
     private KeyCode leftKey;
     private KeyCode rightKey;
     private KeyCode upKey;
@@ -128,6 +129,7 @@ public class GameCharacter extends Pane {
             this.stop();
         }
         if (this.isFalling && this.y < c.getY()) {
+            score++;
             this.y = Math.min(GameStage.GROUND - this.characterHeight, c.getY());
             this.repaint();
             c.collapsed();
@@ -203,5 +205,9 @@ public class GameCharacter extends Pane {
 
     public int getCharacterHeight() {
         return characterHeight;
+    }
+
+    public int getScore() {
+        return score;
     }
 }

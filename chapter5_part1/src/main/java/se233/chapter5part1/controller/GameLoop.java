@@ -2,6 +2,7 @@ package se233.chapter5part1.controller;
 
 import se233.chapter5part1.model.GameCharacter;
 import se233.chapter5part1.view.GameStage;
+import se233.chapter5part1.view.Score;
 
 import java.util.List;
 
@@ -40,11 +41,21 @@ public class GameLoop implements Runnable {
             }
         }
     }
+
+    private void updateScore(List<Score> scoreList, List<GameCharacter> gameCharacterList) {
+        javafx.application.Platform.runLater(() -> {
+            for (int i = 0; i < scoreList.size(); i++) {
+                scoreList.get(i).setPoint(gameCharacterList.get(i).getScore());
+            }
+        });
+    }
+
     @Override
     public void run() {
         while (running) {
             float time = System.currentTimeMillis();
             update(gameStage.getGameCharacterList());
+            updateScore(gameStage.getScoreList(), gameStage.getGameCharacterList());
             time = System.currentTimeMillis() - time;
             if (time < interval) {
                 try {
