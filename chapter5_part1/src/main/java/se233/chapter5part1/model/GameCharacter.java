@@ -5,6 +5,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.layout.Pane;
 import se233.chapter5part1.Launcher;
 import se233.chapter5part1.view.GameStage;
+import java.util.concurrent.TimeUnit;
 
 public class GameCharacter extends Pane {
     private Image characterImg;
@@ -127,10 +128,24 @@ public class GameCharacter extends Pane {
             this.stop();
         }
         if (this.isFalling && this.y < c.getY()) {
+            this.y = Math.min(GameStage.GROUND - this.characterHeight, c.getY());
+            this.repaint();
+            c.collapsed();
             c.respawn();
             return true;
         }
         return false;
+    }
+
+    public void collapsed() {
+        this.imageView.setFitHeight(5);
+        this.y = this.y + this.characterHeight - 5;
+        this.repaint();
+        try {
+            TimeUnit.MILLISECONDS.sleep(300);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public void respawn() {
