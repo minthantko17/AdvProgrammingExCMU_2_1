@@ -11,6 +11,8 @@ public class GameCharacter extends Pane {
     private AnimatedSprite imageView;
     private int x;
     private int y;
+    private int startX;
+    private int startY;
     private int characterWidth;
     private int characterHeight;
     private KeyCode leftKey;
@@ -29,6 +31,8 @@ public class GameCharacter extends Pane {
     boolean isJumping = false;
 
     public GameCharacter(int id, int x, int y, String imgName, int count, int column, int row, int width, int height, KeyCode leftKey, KeyCode rightKey, KeyCode upKey) {
+        this.startX=x;
+        this.startY=y;
         this.x = x;
         this.y = y;
         this.setTranslateX(x);
@@ -113,6 +117,34 @@ public class GameCharacter extends Pane {
         moveX();
         moveY();
     }
+
+    public boolean collided(GameCharacter c) {
+        if (this.isMoveLeft && this.x > c.getX()) {
+            this.x = Math.max(this.x, c.getX() + c.getCharacterWidth());
+            this.stop();
+        } else if (this.isMoveRight && this.x < c.getX()) {
+            this.x = Math.min(this.x, c.getX() - this.characterWidth);
+            this.stop();
+        }
+        if (this.isFalling && this.y < c.getY()) {
+            c.respawn();
+            return true;
+        }
+        return false;
+    }
+
+    public void respawn() {
+        this.x = this.startX;
+        this.y = this.startY;
+        this.imageView.setFitWidth(this.characterWidth);
+        this.imageView.setFitHeight(this.characterHeight);
+        this.isMoveLeft = false;
+        this.isMoveRight = false;
+        this.isFalling = true;
+        this.canJump = false;
+        this.isJumping = false;
+    }
+
     public KeyCode getLeftKey() {
 
         return leftKey;
@@ -128,5 +160,33 @@ public class GameCharacter extends Pane {
     public AnimatedSprite getImageView() {
 
         return imageView;
+    }
+
+    public int getX() {
+        return x;
+    }
+
+    public int getY() {
+        return y;
+    }
+
+    public Image getCharacterImg() {
+        return characterImg;
+    }
+
+    public int getStartX() {
+        return startX;
+    }
+
+    public int getStartY() {
+        return startY;
+    }
+
+    public int getCharacterWidth() {
+        return characterWidth;
+    }
+
+    public int getCharacterHeight() {
+        return characterHeight;
     }
 }
