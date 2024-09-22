@@ -14,10 +14,10 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 public class SnakeTest {
     private Snake snake;
 
-    @BeforeAll
-    public static void initJfxRuntime() {
-        javafx.application.Platform.startup(() -> {});
-    }
+//    @BeforeAll
+//    public static void initJfxRuntime() {
+//        javafx.application.Platform.startup(() -> {});
+//    }
 
     @BeforeEach
     public void setup() {
@@ -81,6 +81,22 @@ public class SnakeTest {
         snake.grow();
         assertTrue(snake.checkDead());
     }
+
+//    @Test
+//    public void testCannotMoveOppositeDirection() {
+//
+//        snake= new Snake(new Point2D(0, 0));
+//        snake.setDirection(Direction.RIGHT);
+//        snake.move();
+//        snake.setDirection(Direction.LEFT);
+//        snake.move();
+//        System.out.println(snake.getDirection());
+//
+//
+//        assertEquals(2, snake.getHead().getX(), "head X");
+//        assertEquals(0, snake.getHead().getY(), "head Y");
+////        assertTrue(snake.getDirection()== Direction.RIGHT,"Snake should be heading right");
+//    }
 
 }
 

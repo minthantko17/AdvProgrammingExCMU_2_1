@@ -11,10 +11,10 @@ import static org.junit.jupiter.api.Assertions.assertNotSame;
 public class FoodTest {
     private Food food;
 
-    @BeforeAll
-    public static void initJfxRuntime() {
-        javafx.application.Platform.startup(() -> {});
-    }
+//    @BeforeAll
+//    public static void initJfxRuntime() {
+//        javafx.application.Platform.startup(() -> {});
+//    }
 
     @BeforeEach
     public void setup() {

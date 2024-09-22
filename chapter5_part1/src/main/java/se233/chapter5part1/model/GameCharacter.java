@@ -89,8 +89,8 @@ public class GameCharacter extends Pane {
     public void checkReachGameWall() {
         if(x <= 0) {
             x = 0;
-        } else if( x+getWidth() >= GameStage.WIDTH) {
-            x = GameStage.WIDTH-(int)getWidth();
+        } else if( x+getCharacterWidth() >= GameStage.WIDTH) {
+            x = GameStage.WIDTH-(int)getCharacterWidth();
         }
     }
     public void jump() {
@@ -153,8 +153,8 @@ public class GameCharacter extends Pane {
     public void respawn() {
         this.x = this.startX;
         this.y = this.startY;
-        this.imageView.setFitWidth(this.characterWidth);
-        this.imageView.setFitHeight(this.characterHeight);
+        this.imageView.setFitWidth(this.characterWidth*1.2);
+        this.imageView.setFitHeight(this.characterHeight*1.2);
         this.isMoveLeft = false;
         this.isMoveRight = false;
         this.isFalling = true;
