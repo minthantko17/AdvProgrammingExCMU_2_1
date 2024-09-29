@@ -1,0 +1,490 @@
+[ INFO] Sunday, 2024-09-29 19:42:54 [time 3400 ms] trace:140 [Thread-3] GameCharacter - x:70 y:236 vx:0 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:54 [time 3507 ms] trace:140 [Thread-3] GameCharacter - x:190 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:54 [time 4011 ms] trace:140 [Thread-3] GameCharacter - x:30 y:236 vx:0 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:55 [time 4112 ms] trace:140 [Thread-3] GameCharacter - x:51 y:236 vx:6 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:55 [time 4818 ms] trace:140 [Thread-3] GameCharacter - x:93 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:55 [time 4920 ms] trace:140 [Thread-3] GameCharacter - x:135 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:56 [time 5927 ms] trace:140 [Thread-3] GameCharacter - x:177 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:57 [time 6066 ms] trace:140 [Thread-3] GameCharacter - x:114 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:57 [time 6470 ms] trace:140 [Thread-3] GameCharacter - x:79 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:57 [time 6572 ms] trace:140 [Thread-3] GameCharacter - x:37 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:42:57 [time 6674 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:42:57 [time 6675 ms] trace:140 [Thread-3] GameCharacter - x:-5 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:42:57 [time 6777 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:42:57 [time 6777 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:58 [time 7985 ms] trace:140 [Thread-3] GameCharacter - x:280 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:59 [time 8088 ms] trace:140 [Thread-3] GameCharacter - x:370 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:59 [time 8190 ms] trace:140 [Thread-3] GameCharacter - x:460 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:59 [time 8292 ms] trace:140 [Thread-3] GameCharacter - x:550 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:59 [time 8395 ms] trace:140 [Thread-3] GameCharacter - x:640 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:42:59 [time 8498 ms] trace:140 [Thread-3] GameCharacter - x:730 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:42:59 [time 8599 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:42:59 [time 8599 ms] trace:140 [Thread-3] GameCharacter - x:751 y:128 vx:15 vy:13
+[DEBUG] Sunday, 2024-09-29 19:42:59 [time 8700 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:42:59 [time 8700 ms] trace:140 [Thread-3] GameCharacter - x:751 y:92 vx:15 vy:1
+[DEBUG] Sunday, 2024-09-29 19:42:59 [time 8801 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:42:59 [time 8814 ms] trace:140 [Thread-3] GameCharacter - x:751 y:135 vx:15 vy:12
+[DEBUG] Sunday, 2024-09-29 19:42:59 [time 8915 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:42:59 [time 8916 ms] trace:140 [Thread-3] GameCharacter - x:751 y:249 vx:15 vy:24
+[DEBUG] Sunday, 2024-09-29 19:42:59 [time 9017 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:42:59 [time 9018 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 9119 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 9119 ms] trace:140 [Thread-3] GameCharacter - x:751 y:128 vx:15 vy:13
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 9220 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 9221 ms] trace:140 [Thread-3] GameCharacter - x:751 y:92 vx:15 vy:1
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 9323 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 9324 ms] trace:140 [Thread-3] GameCharacter - x:751 y:135 vx:15 vy:12
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 9427 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 9428 ms] trace:140 [Thread-3] GameCharacter - x:751 y:249 vx:15 vy:24
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 9529 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 9530 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 9631 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 9632 ms] trace:140 [Thread-3] GameCharacter - x:0 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 9633 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 9633 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 9736 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 9737 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 9737 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 9738 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 9840 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 9841 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 9842 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 9842 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 9943 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 9943 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 9943 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 9944 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 10046 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 10047 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:00 [time 10047 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:00 [time 10048 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:01 [time 10150 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10170 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:01 [time 10170 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10171 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:01 [time 10272 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10272 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:01 [time 10273 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10274 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10376 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10377 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10479 ms] trace:140 [Thread-3] GameCharacter - x:42 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10480 ms] trace:140 [Thread-3] GameCharacter - x:646 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10581 ms] trace:140 [Thread-3] GameCharacter - x:84 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10582 ms] trace:140 [Thread-3] GameCharacter - x:556 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10683 ms] trace:140 [Thread-3] GameCharacter - x:126 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10684 ms] trace:140 [Thread-3] GameCharacter - x:466 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10785 ms] trace:140 [Thread-3] GameCharacter - x:168 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10786 ms] trace:140 [Thread-3] GameCharacter - x:376 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10888 ms] trace:140 [Thread-3] GameCharacter - x:210 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10889 ms] trace:140 [Thread-3] GameCharacter - x:286 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10990 ms] trace:140 [Thread-3] GameCharacter - x:252 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:01 [time 10990 ms] trace:140 [Thread-3] GameCharacter - x:196 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11091 ms] trace:140 [Thread-3] GameCharacter - x:301 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11092 ms] trace:140 [Thread-3] GameCharacter - x:91 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11192 ms] trace:140 [Thread-3] GameCharacter - x:343 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11193 ms] trace:140 [Thread-3] GameCharacter - x:1 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11294 ms] trace:140 [Thread-3] GameCharacter - x:385 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:02 [time 11295 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11296 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11399 ms] trace:140 [Thread-3] GameCharacter - x:427 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:02 [time 11400 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11401 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11503 ms] trace:140 [Thread-3] GameCharacter - x:469 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:02 [time 11539 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11539 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11640 ms] trace:140 [Thread-3] GameCharacter - x:532 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:02 [time 11641 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11642 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11743 ms] trace:140 [Thread-3] GameCharacter - x:574 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:02 [time 11744 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11744 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11846 ms] trace:140 [Thread-3] GameCharacter - x:616 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:02 [time 11847 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11848 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11949 ms] trace:140 [Thread-3] GameCharacter - x:658 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:02 [time 11950 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12051 ms] trace:140 [Thread-3] GameCharacter - x:105 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12152 ms] trace:140 [Thread-3] GameCharacter - x:195 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12254 ms] trace:140 [Thread-3] GameCharacter - x:707 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12255 ms] trace:140 [Thread-3] GameCharacter - x:285 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12357 ms] trace:140 [Thread-3] GameCharacter - x:665 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12358 ms] trace:140 [Thread-3] GameCharacter - x:375 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12459 ms] trace:140 [Thread-3] GameCharacter - x:623 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12459 ms] trace:140 [Thread-3] GameCharacter - x:465 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12561 ms] trace:140 [Thread-3] GameCharacter - x:581 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12562 ms] trace:140 [Thread-3] GameCharacter - x:555 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12664 ms] trace:140 [Thread-3] GameCharacter - x:539 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12665 ms] trace:140 [Thread-3] GameCharacter - x:645 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12767 ms] trace:140 [Thread-3] GameCharacter - x:497 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12768 ms] trace:140 [Thread-3] GameCharacter - x:735 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12869 ms] trace:140 [Thread-3] GameCharacter - x:455 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:03 [time 12869 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12870 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12972 ms] trace:140 [Thread-3] GameCharacter - x:406 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:03 [time 12973 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:03 [time 12973 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13075 ms] trace:140 [Thread-3] GameCharacter - x:364 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13076 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13177 ms] trace:140 [Thread-3] GameCharacter - x:322 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13178 ms] trace:140 [Thread-3] GameCharacter - x:646 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13280 ms] trace:140 [Thread-3] GameCharacter - x:280 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13281 ms] trace:140 [Thread-3] GameCharacter - x:556 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13382 ms] trace:140 [Thread-3] GameCharacter - x:238 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13383 ms] trace:140 [Thread-3] GameCharacter - x:466 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13485 ms] trace:140 [Thread-3] GameCharacter - x:189 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13485 ms] trace:140 [Thread-3] GameCharacter - x:361 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13586 ms] trace:140 [Thread-3] GameCharacter - x:147 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13588 ms] trace:140 [Thread-3] GameCharacter - x:271 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13688 ms] trace:140 [Thread-3] GameCharacter - x:105 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13689 ms] trace:140 [Thread-3] GameCharacter - x:181 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13792 ms] trace:140 [Thread-3] GameCharacter - x:63 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13792 ms] trace:140 [Thread-3] GameCharacter - x:91 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13894 ms] trace:140 [Thread-3] GameCharacter - x:21 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13895 ms] trace:140 [Thread-3] GameCharacter - x:1 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:04 [time 13997 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13998 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:04 [time 13998 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:04 [time 13999 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14100 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14201 ms] trace:140 [Thread-3] GameCharacter - x:49 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14202 ms] trace:140 [Thread-3] GameCharacter - x:0 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14303 ms] trace:140 [Thread-3] GameCharacter - x:91 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14304 ms] trace:140 [Thread-3] GameCharacter - x:90 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14405 ms] trace:140 [Thread-3] GameCharacter - x:133 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14405 ms] trace:140 [Thread-3] GameCharacter - x:180 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14506 ms] trace:140 [Thread-3] GameCharacter - x:175 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14507 ms] trace:140 [Thread-3] GameCharacter - x:270 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14608 ms] trace:140 [Thread-3] GameCharacter - x:217 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14609 ms] trace:140 [Thread-3] GameCharacter - x:360 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14710 ms] trace:140 [Thread-3] GameCharacter - x:259 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14710 ms] trace:140 [Thread-3] GameCharacter - x:450 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14812 ms] trace:140 [Thread-3] GameCharacter - x:308 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14812 ms] trace:140 [Thread-3] GameCharacter - x:555 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14914 ms] trace:140 [Thread-3] GameCharacter - x:350 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 14915 ms] trace:140 [Thread-3] GameCharacter - x:645 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 15016 ms] trace:140 [Thread-3] GameCharacter - x:392 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:05 [time 15017 ms] trace:140 [Thread-3] GameCharacter - x:735 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15118 ms] trace:140 [Thread-3] GameCharacter - x:434 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15119 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15220 ms] trace:140 [Thread-3] GameCharacter - x:476 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15221 ms] trace:140 [Thread-3] GameCharacter - x:646 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15322 ms] trace:140 [Thread-3] GameCharacter - x:518 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15323 ms] trace:140 [Thread-3] GameCharacter - x:556 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15423 ms] trace:140 [Thread-3] GameCharacter - x:560 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15424 ms] trace:140 [Thread-3] GameCharacter - x:466 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15527 ms] trace:140 [Thread-3] GameCharacter - x:609 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15528 ms] trace:140 [Thread-3] GameCharacter - x:361 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15629 ms] trace:140 [Thread-3] GameCharacter - x:651 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15630 ms] trace:140 [Thread-3] GameCharacter - x:271 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15732 ms] trace:140 [Thread-3] GameCharacter - x:693 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15732 ms] trace:140 [Thread-3] GameCharacter - x:181 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15833 ms] trace:140 [Thread-3] GameCharacter - x:735 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15833 ms] trace:140 [Thread-3] GameCharacter - x:91 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:06 [time 15935 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15936 ms] trace:140 [Thread-3] GameCharacter - x:775 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 15937 ms] trace:140 [Thread-3] GameCharacter - x:1 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:06 [time 16039 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 16040 ms] trace:140 [Thread-3] GameCharacter - x:775 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:06 [time 16041 ms] trace:140 [Thread-3] GameCharacter - x:91 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:07 [time 16144 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16144 ms] trace:140 [Thread-3] GameCharacter - x:775 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16144 ms] trace:140 [Thread-3] GameCharacter - x:181 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16245 ms] trace:140 [Thread-3] GameCharacter - x:271 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16348 ms] trace:140 [Thread-3] GameCharacter - x:768 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16348 ms] trace:140 [Thread-3] GameCharacter - x:361 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16450 ms] trace:140 [Thread-3] GameCharacter - x:726 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16450 ms] trace:140 [Thread-3] GameCharacter - x:451 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16551 ms] trace:140 [Thread-3] GameCharacter - x:684 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16551 ms] trace:140 [Thread-3] GameCharacter - x:541 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16653 ms] trace:140 [Thread-3] GameCharacter - x:635 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16653 ms] trace:140 [Thread-3] GameCharacter - x:646 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16755 ms] trace:140 [Thread-3] GameCharacter - x:600 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16755 ms] trace:140 [Thread-3] GameCharacter - x:721 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16856 ms] trace:140 [Thread-3] GameCharacter - x:551 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:07 [time 16856 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16856 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:07 [time 16958 ms] trace:140 [Thread-3] GameCharacter - x:509 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17089 ms] trace:140 [Thread-3] GameCharacter - x:736 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17192 ms] trace:140 [Thread-3] GameCharacter - x:453 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17193 ms] trace:140 [Thread-3] GameCharacter - x:646 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17293 ms] trace:140 [Thread-3] GameCharacter - x:495 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17294 ms] trace:140 [Thread-3] GameCharacter - x:556 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17397 ms] trace:140 [Thread-3] GameCharacter - x:537 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17398 ms] trace:140 [Thread-3] GameCharacter - x:466 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17498 ms] trace:140 [Thread-3] GameCharacter - x:579 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17499 ms] trace:140 [Thread-3] GameCharacter - x:376 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17601 ms] trace:140 [Thread-3] GameCharacter - x:628 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17602 ms] trace:140 [Thread-3] GameCharacter - x:271 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17702 ms] trace:140 [Thread-3] GameCharacter - x:670 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17702 ms] trace:140 [Thread-3] GameCharacter - x:181 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17804 ms] trace:140 [Thread-3] GameCharacter - x:712 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17804 ms] trace:140 [Thread-3] GameCharacter - x:91 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17905 ms] trace:140 [Thread-3] GameCharacter - x:754 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 17905 ms] trace:140 [Thread-3] GameCharacter - x:1 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 18008 ms] trace:140 [Thread-3] GameCharacter - x:712 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:08 [time 18009 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:08 [time 18009 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18111 ms] trace:140 [Thread-3] GameCharacter - x:670 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18112 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18214 ms] trace:140 [Thread-3] GameCharacter - x:628 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18214 ms] trace:140 [Thread-3] GameCharacter - x:105 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18315 ms] trace:140 [Thread-3] GameCharacter - x:579 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18316 ms] trace:140 [Thread-3] GameCharacter - x:195 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18417 ms] trace:140 [Thread-3] GameCharacter - x:537 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18417 ms] trace:140 [Thread-3] GameCharacter - x:285 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18518 ms] trace:140 [Thread-3] GameCharacter - x:495 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18519 ms] trace:140 [Thread-3] GameCharacter - x:375 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18620 ms] trace:140 [Thread-3] GameCharacter - x:453 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18621 ms] trace:140 [Thread-3] GameCharacter - x:465 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18721 ms] trace:140 [Thread-3] GameCharacter - x:411 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18722 ms] trace:140 [Thread-3] GameCharacter - x:555 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18823 ms] trace:140 [Thread-3] GameCharacter - x:369 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18824 ms] trace:140 [Thread-3] GameCharacter - x:645 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18926 ms] trace:140 [Thread-3] GameCharacter - x:327 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 18927 ms] trace:140 [Thread-3] GameCharacter - x:735 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 19028 ms] trace:140 [Thread-3] GameCharacter - x:285 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:09 [time 19029 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:09 [time 19029 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19131 ms] trace:140 [Thread-3] GameCharacter - x:236 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19131 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19233 ms] trace:140 [Thread-3] GameCharacter - x:194 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19233 ms] trace:140 [Thread-3] GameCharacter - x:646 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19334 ms] trace:140 [Thread-3] GameCharacter - x:152 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19335 ms] trace:140 [Thread-3] GameCharacter - x:556 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19436 ms] trace:140 [Thread-3] GameCharacter - x:110 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19437 ms] trace:140 [Thread-3] GameCharacter - x:466 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19539 ms] trace:140 [Thread-3] GameCharacter - x:68 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19540 ms] trace:140 [Thread-3] GameCharacter - x:376 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19641 ms] trace:140 [Thread-3] GameCharacter - x:26 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19641 ms] trace:140 [Thread-3] GameCharacter - x:286 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:10 [time 19744 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19745 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19745 ms] trace:140 [Thread-3] GameCharacter - x:181 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19846 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19846 ms] trace:140 [Thread-3] GameCharacter - x:91 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19948 ms] trace:140 [Thread-3] GameCharacter - x:42 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 19948 ms] trace:140 [Thread-3] GameCharacter - x:1 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 20049 ms] trace:140 [Thread-3] GameCharacter - x:84 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:10 [time 20049 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:10 [time 20049 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20151 ms] trace:140 [Thread-3] GameCharacter - x:126 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:11 [time 20152 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20152 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20253 ms] trace:140 [Thread-3] GameCharacter - x:168 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:11 [time 20253 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20254 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20356 ms] trace:140 [Thread-3] GameCharacter - x:210 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20357 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20458 ms] trace:140 [Thread-3] GameCharacter - x:252 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20459 ms] trace:140 [Thread-3] GameCharacter - x:90 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20561 ms] trace:140 [Thread-3] GameCharacter - x:301 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20562 ms] trace:140 [Thread-3] GameCharacter - x:195 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20664 ms] trace:140 [Thread-3] GameCharacter - x:343 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20664 ms] trace:140 [Thread-3] GameCharacter - x:285 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20766 ms] trace:140 [Thread-3] GameCharacter - x:385 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20767 ms] trace:140 [Thread-3] GameCharacter - x:375 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20867 ms] trace:140 [Thread-3] GameCharacter - x:427 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20867 ms] trace:140 [Thread-3] GameCharacter - x:465 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20969 ms] trace:140 [Thread-3] GameCharacter - x:469 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:11 [time 20970 ms] trace:140 [Thread-3] GameCharacter - x:555 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21070 ms] trace:140 [Thread-3] GameCharacter - x:511 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21084 ms] trace:140 [Thread-3] GameCharacter - x:660 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21185 ms] trace:140 [Thread-3] GameCharacter - x:560 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:12 [time 21186 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21186 ms] trace:140 [Thread-3] GameCharacter - x:750 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21288 ms] trace:140 [Thread-3] GameCharacter - x:602 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21388 ms] trace:140 [Thread-3] GameCharacter - x:651 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21389 ms] trace:140 [Thread-3] GameCharacter - x:736 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21491 ms] trace:140 [Thread-3] GameCharacter - x:693 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21491 ms] trace:140 [Thread-3] GameCharacter - x:646 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21594 ms] trace:140 [Thread-3] GameCharacter - x:556 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21695 ms] trace:140 [Thread-3] GameCharacter - x:466 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21796 ms] trace:140 [Thread-3] GameCharacter - x:735 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21798 ms] trace:140 [Thread-3] GameCharacter - x:376 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21899 ms] trace:140 [Thread-3] GameCharacter - x:693 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 21899 ms] trace:140 [Thread-3] GameCharacter - x:286 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 22000 ms] trace:140 [Thread-3] GameCharacter - x:651 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:12 [time 22001 ms] trace:140 [Thread-3] GameCharacter - x:196 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22102 ms] trace:140 [Thread-3] GameCharacter - x:609 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22102 ms] trace:140 [Thread-3] GameCharacter - x:106 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22203 ms] trace:140 [Thread-3] GameCharacter - x:560 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22203 ms] trace:140 [Thread-3] GameCharacter - x:1 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22305 ms] trace:140 [Thread-3] GameCharacter - x:518 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:13 [time 22305 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22305 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22407 ms] trace:140 [Thread-3] GameCharacter - x:476 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:13 [time 22444 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22445 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22546 ms] trace:140 [Thread-3] GameCharacter - x:420 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:13 [time 22547 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22547 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22648 ms] trace:140 [Thread-3] GameCharacter - x:378 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:13 [time 22648 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22649 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22750 ms] trace:140 [Thread-3] GameCharacter - x:336 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22750 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22851 ms] trace:140 [Thread-3] GameCharacter - x:294 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22851 ms] trace:140 [Thread-3] GameCharacter - x:90 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22953 ms] trace:140 [Thread-3] GameCharacter - x:252 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:13 [time 22953 ms] trace:140 [Thread-3] GameCharacter - x:180 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23055 ms] trace:140 [Thread-3] GameCharacter - x:210 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23056 ms] trace:140 [Thread-3] GameCharacter - x:270 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23156 ms] trace:140 [Thread-3] GameCharacter - x:168 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23156 ms] trace:140 [Thread-3] GameCharacter - x:360 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23257 ms] trace:140 [Thread-3] GameCharacter - x:126 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23257 ms] trace:140 [Thread-3] GameCharacter - x:450 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23359 ms] trace:140 [Thread-3] GameCharacter - x:84 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23359 ms] trace:140 [Thread-3] GameCharacter - x:540 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23460 ms] trace:140 [Thread-3] GameCharacter - x:35 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23461 ms] trace:140 [Thread-3] GameCharacter - x:645 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:14 [time 23562 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23562 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23563 ms] trace:140 [Thread-3] GameCharacter - x:735 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:14 [time 23665 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23666 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23767 ms] trace:140 [Thread-3] GameCharacter - x:0 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23868 ms] trace:140 [Thread-3] GameCharacter - x:42 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23868 ms] trace:140 [Thread-3] GameCharacter - x:736 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23971 ms] trace:140 [Thread-3] GameCharacter - x:84 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:14 [time 23971 ms] trace:140 [Thread-3] GameCharacter - x:646 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24072 ms] trace:140 [Thread-3] GameCharacter - x:126 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24072 ms] trace:140 [Thread-3] GameCharacter - x:556 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24174 ms] trace:140 [Thread-3] GameCharacter - x:175 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24174 ms] trace:140 [Thread-3] GameCharacter - x:451 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24276 ms] trace:140 [Thread-3] GameCharacter - x:217 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24276 ms] trace:140 [Thread-3] GameCharacter - x:361 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24378 ms] trace:140 [Thread-3] GameCharacter - x:259 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24378 ms] trace:140 [Thread-3] GameCharacter - x:271 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24480 ms] trace:140 [Thread-3] GameCharacter - x:301 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24481 ms] trace:140 [Thread-3] GameCharacter - x:181 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24581 ms] trace:140 [Thread-3] GameCharacter - x:343 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24581 ms] trace:140 [Thread-3] GameCharacter - x:91 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24682 ms] trace:140 [Thread-3] GameCharacter - x:385 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24682 ms] trace:140 [Thread-3] GameCharacter - x:1 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24783 ms] trace:140 [Thread-3] GameCharacter - x:427 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:15 [time 24783 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24783 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24885 ms] trace:140 [Thread-3] GameCharacter - x:469 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24986 ms] trace:140 [Thread-3] GameCharacter - x:518 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:15 [time 24986 ms] trace:140 [Thread-3] GameCharacter - x:0 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25088 ms] trace:140 [Thread-3] GameCharacter - x:476 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25088 ms] trace:140 [Thread-3] GameCharacter - x:90 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25190 ms] trace:140 [Thread-3] GameCharacter - x:434 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25191 ms] trace:140 [Thread-3] GameCharacter - x:180 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25292 ms] trace:140 [Thread-3] GameCharacter - x:392 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25292 ms] trace:140 [Thread-3] GameCharacter - x:270 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25393 ms] trace:140 [Thread-3] GameCharacter - x:350 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25394 ms] trace:140 [Thread-3] GameCharacter - x:360 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25495 ms] trace:140 [Thread-3] GameCharacter - x:308 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25496 ms] trace:140 [Thread-3] GameCharacter - x:450 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25597 ms] trace:140 [Thread-3] GameCharacter - x:266 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25597 ms] trace:140 [Thread-3] GameCharacter - x:540 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25698 ms] trace:140 [Thread-3] GameCharacter - x:224 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25699 ms] trace:140 [Thread-3] GameCharacter - x:630 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25801 ms] trace:140 [Thread-3] GameCharacter - x:175 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25802 ms] trace:140 [Thread-3] GameCharacter - x:735 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25903 ms] trace:140 [Thread-3] GameCharacter - x:133 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:16 [time 25903 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 25904 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:16 [time 26004 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26105 ms] trace:140 [Thread-3] GameCharacter - x:91 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26105 ms] trace:140 [Thread-3] GameCharacter - x:646 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26208 ms] trace:140 [Thread-3] GameCharacter - x:133 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26208 ms] trace:140 [Thread-3] GameCharacter - x:556 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26309 ms] trace:140 [Thread-3] GameCharacter - x:175 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26310 ms] trace:140 [Thread-3] GameCharacter - x:466 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26410 ms] trace:140 [Thread-3] GameCharacter - x:217 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26411 ms] trace:140 [Thread-3] GameCharacter - x:361 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26513 ms] trace:140 [Thread-3] GameCharacter - x:266 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26542 ms] trace:140 [Thread-3] GameCharacter - x:256 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26643 ms] trace:140 [Thread-3] GameCharacter - x:322 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26643 ms] trace:140 [Thread-3] GameCharacter - x:151 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26744 ms] trace:140 [Thread-3] GameCharacter - x:364 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26745 ms] trace:140 [Thread-3] GameCharacter - x:61 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26846 ms] trace:140 [Thread-3] GameCharacter - x:406 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:17 [time 26846 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26847 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26949 ms] trace:140 [Thread-3] GameCharacter - x:448 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:17 [time 26949 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:17 [time 26950 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27051 ms] trace:140 [Thread-3] GameCharacter - x:490 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:18 [time 27051 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27052 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27152 ms] trace:140 [Thread-3] GameCharacter - x:532 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:18 [time 27152 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27152 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27254 ms] trace:140 [Thread-3] GameCharacter - x:574 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27254 ms] trace:140 [Thread-3] GameCharacter - x:-15 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27356 ms] trace:140 [Thread-3] GameCharacter - x:616 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27356 ms] trace:140 [Thread-3] GameCharacter - x:90 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27457 ms] trace:140 [Thread-3] GameCharacter - x:658 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27457 ms] trace:140 [Thread-3] GameCharacter - x:180 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27559 ms] trace:140 [Thread-3] GameCharacter - x:700 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27559 ms] trace:140 [Thread-3] GameCharacter - x:270 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27661 ms] trace:140 [Thread-3] GameCharacter - x:742 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27661 ms] trace:140 [Thread-3] GameCharacter - x:360 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:18 [time 27764 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27764 ms] trace:140 [Thread-3] GameCharacter - x:775 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27765 ms] trace:140 [Thread-3] GameCharacter - x:465 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:18 [time 27866 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27898 ms] trace:140 [Thread-3] GameCharacter - x:775 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 27898 ms] trace:140 [Thread-3] GameCharacter - x:585 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:18 [time 28001 ms] trace:140 [Thread-3] GameCharacter - x:675 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28102 ms] trace:140 [Thread-3] GameCharacter - x:768 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28102 ms] trace:140 [Thread-3] GameCharacter - x:585 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28204 ms] trace:140 [Thread-3] GameCharacter - x:726 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28204 ms] trace:140 [Thread-3] GameCharacter - x:495 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28306 ms] trace:140 [Thread-3] GameCharacter - x:677 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28306 ms] trace:140 [Thread-3] GameCharacter - x:390 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28408 ms] trace:140 [Thread-3] GameCharacter - x:635 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28409 ms] trace:140 [Thread-3] GameCharacter - x:300 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28509 ms] trace:140 [Thread-3] GameCharacter - x:593 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28509 ms] trace:140 [Thread-3] GameCharacter - x:210 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28611 ms] trace:140 [Thread-3] GameCharacter - x:551 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28612 ms] trace:140 [Thread-3] GameCharacter - x:120 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28713 ms] trace:140 [Thread-3] GameCharacter - x:509 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28713 ms] trace:140 [Thread-3] GameCharacter - x:30 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28815 ms] trace:140 [Thread-3] GameCharacter - x:467 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28916 ms] trace:140 [Thread-3] GameCharacter - x:425 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 28917 ms] trace:140 [Thread-3] GameCharacter - x:0 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 29018 ms] trace:140 [Thread-3] GameCharacter - x:376 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:19 [time 29018 ms] trace:140 [Thread-3] GameCharacter - x:105 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29120 ms] trace:140 [Thread-3] GameCharacter - x:334 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29120 ms] trace:140 [Thread-3] GameCharacter - x:195 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29221 ms] trace:140 [Thread-3] GameCharacter - x:292 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29221 ms] trace:140 [Thread-3] GameCharacter - x:285 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29323 ms] trace:140 [Thread-3] GameCharacter - x:250 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29323 ms] trace:140 [Thread-3] GameCharacter - x:375 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29425 ms] trace:140 [Thread-3] GameCharacter - x:208 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29425 ms] trace:140 [Thread-3] GameCharacter - x:465 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29526 ms] trace:140 [Thread-3] GameCharacter - x:166 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29526 ms] trace:140 [Thread-3] GameCharacter - x:555 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29629 ms] trace:140 [Thread-3] GameCharacter - x:124 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29630 ms] trace:140 [Thread-3] GameCharacter - x:645 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29732 ms] trace:140 [Thread-3] GameCharacter - x:75 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:20 [time 29732 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29732 ms] trace:140 [Thread-3] GameCharacter - x:750 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29833 ms] trace:140 [Thread-3] GameCharacter - x:33 y:236 vx:7 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:20 [time 29833 ms] moveRight:100 [Thread-3] GameCharacter - Reached right wall.
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29834 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:20 [time 29934 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29934 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 29935 ms] trace:140 [Thread-3] GameCharacter - x:751 y:236 vx:15 vy:0
+[DEBUG] Sunday, 2024-09-29 19:43:20 [time 30036 ms] moveLeft:91 [Thread-3] GameCharacter - Reached left wall.
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 30036 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:20 [time 30037 ms] trace:140 [Thread-3] GameCharacter - x:646 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30139 ms] trace:140 [Thread-3] GameCharacter - x:-7 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30139 ms] trace:140 [Thread-3] GameCharacter - x:556 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30241 ms] trace:140 [Thread-3] GameCharacter - x:42 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30241 ms] trace:140 [Thread-3] GameCharacter - x:466 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30343 ms] trace:140 [Thread-3] GameCharacter - x:84 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30343 ms] trace:140 [Thread-3] GameCharacter - x:376 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30445 ms] trace:140 [Thread-3] GameCharacter - x:126 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30445 ms] trace:140 [Thread-3] GameCharacter - x:286 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30546 ms] trace:140 [Thread-3] GameCharacter - x:168 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30546 ms] trace:140 [Thread-3] GameCharacter - x:196 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30649 ms] trace:140 [Thread-3] GameCharacter - x:210 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30650 ms] trace:140 [Thread-3] GameCharacter - x:106 y:236 vx:15 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30752 ms] trace:140 [Thread-3] GameCharacter - x:259 y:236 vx:7 vy:0
+[ INFO] Sunday, 2024-09-29 19:43:21 [time 30752 ms] trace:140 [Thread-3] GameCharacter - x:1 y:236 vx:15 vy:0
